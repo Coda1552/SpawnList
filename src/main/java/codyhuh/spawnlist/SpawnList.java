@@ -30,10 +30,10 @@ public class SpawnList {
             if (file.createNewFile()) {
                 System.out.println(file.getName() + " created!");
             } else {
-                System.out.println("File already exists at.");
+                System.out.println("File 'spawns.txt' already exists!");
             }
         } catch (IOException exception) {
-            System.out.println("An error occurred.");
+            System.out.println("An error occurred while creating spawns.txt!");
             exception.printStackTrace();
         }
 
@@ -61,7 +61,7 @@ public class SpawnList {
             myWriter.close();
             System.out.println("Successfully wrote to the file.");
         } catch (IOException exception) {
-            System.out.println("An error occurred.");
+            System.out.println("An error occurred while writing to spawns.txt!");
             exception.printStackTrace();
         }
     }
